@@ -13,7 +13,7 @@ type
    public
      constructor start;
      destructor Done;
-     procedure naeb;
+     procedure zarobotok;
      function sravnenie : Integer;
      function vivod : Integer;
    end;
@@ -23,7 +23,7 @@ begin
 if dengi > nujno  then writeln('Horoshaya rabota, zarabotali = ', dengi, ' nyjno bilo = ', nujno)
 else writeln('dela plohi')
 end;
-//оверлоад отдельно от объекта. С ним можно брать 2 функции с одинаковыми иминами)))))))
+//оверлоад отдельно от объекта. С ним можно брать 2 функции с одинаковыми именами)))))))
 function neznay(num1, num2: integer): Integer; overload;
 begin
  result:= num1 + num2
@@ -34,7 +34,7 @@ begin
 end;
 
 
-procedure MMM.naeb;
+procedure MMM.zarobotok;
 var
   a,b: integer;
 begin
@@ -71,8 +71,8 @@ begin
    writeln(neznay(100, 20));
    writeln(neznay(5.2, 3.4));
    maza.start;
-   maza.naeb;
-   maza.naeb;
+   maza.zarobotok;
+   maza.zarobotok;
    maza.sravnenie;
    maza.Done;
    readln;
